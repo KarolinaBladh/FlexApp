@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FlexApp</string>
+    <string name="action_settings">Action settings</string>
+
+    <string name="flexCurrentFlex">Current Flex</string>
+
+    <string name="reportDate">Date</string>
+    <string name="reportWorkTime">WORK TIME</string>
+    <string name="reportInOut">Time In/Out</string>
+    <string name="reportIn">IN</string>
+    <string name="reportOut">OUT</string>
+    <string name="reportInOutLunch">In/Out Lunch</string>
+    <string name="reportLunchIn">IN LUNCH</string>
+    <string name="reportLunchOut">OUT LUNCH</string>
+    <string name="reportSick">SICK</string>
+    <string name="reportSave">SAVE</string>
+    <string name="dialogmessage">TIME NOT SAVED</string>
+
+    <string name="archiveMonth">Month</string>
+    <string name="archiveSee">See</string>
+    <string name="archiveSend">Send</string>
+    <string name="archiveRemove">Remove</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+
+</resources>

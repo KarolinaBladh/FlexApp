@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reportDate"
+        android:textSize="30dp"
+        android:id="@+id/dateButton"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorDark"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reportWorkTime"
+        android:textSize="30dp"
+        android:id="@+id/workTimeButton"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorDark"
+        android:layout_below="@+id/dateButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workTimeButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:id="@+id/rapportering">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.70"
+            android:orientation="vertical"
+            android:id="@+id/inUt">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/reportInOut"
+                android:textStyle="bold"
+                android:id="@+id/textInUt"
+                android:textColor="@color/colorDark"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reportIn"
+                android:textSize="20dp"
+                android:id="@+id/inButton"
+                android:textColor="@color/colorBackground"
+                android:background="@color/colorDark"
+                android:layout_below="@+id/textInUt"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reportOut"
+                android:textSize="20dp"
+                android:id="@+id/outButton"
+                android:textColor="@color/colorBackground"
+                android:background="@color/colorDark"
+                android:layout_below="@+id/inButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:orientation="vertical"
+            android:id="@+id/lunchInUt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/reportInOutLunch"
+                android:textStyle="bold"
+                android:id="@+id/reportLunch"
+                android:textColor="@color/colorDark"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentRight="true"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reportLunchOut"
+                android:textSize="20dp"
+                android:id="@+id/outLunchButton"
+                android:textColor="@color/colorBackground"
+                android:background="@color/colorDark"
+                android:layout_below="@+id/reportLunch"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reportLunchIn"
+                android:textSize="20dp"
+                android:id="@+id/inLunchButton"
+                android:textColor="@color/colorBackground"
+                android:background="@color/colorDark"
+                android:layout_below="@+id/outLunchButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reportSick"
+        android:id="@+id/sickBox"
+        android:checked="false"
+        android:textColor="@color/colorDark"
+        android:layout_below="@+id/rapportering"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reportSave"
+        android:textSize="30dp"
+        android:id="@+id/saveButton"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorDark"
+        android:layout_below="@+id/sickBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+
+</RelativeLayout>
